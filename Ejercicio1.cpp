@@ -20,13 +20,16 @@ void llenado(){
 
 int numeroMayor(){
     int aux=0;
-    for (int i = 0; i < 10; ++i) {
+    int i=0;
+    while (i<10){
         if(arreglo[i]>=aux){
             aux=arreglo[i];
         }else{
             aux=aux;
         }
+        i++;
     }
+
     return aux;
 }
 
